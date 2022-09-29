@@ -9,3 +9,12 @@ The design was provided by the Frontend Mentor [challenge](https://www.frontendm
 
 # Backend
 The backend project was made with **Django** and can be found [here](https://github.com/PaulMirve/kanban-backend). 
+
+# To run this project
+- Clone this repository
+- Clone the backend repository
+- Run the backend (For more instructions on how to run backend go to backend project)
+- yarn install
+- yarn run dev
+- Create an account
+- Login
