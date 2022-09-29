@@ -15,6 +15,9 @@ The backend project was made with **Django** and can be found [here](https://git
 - Clone the backend repository
 - Run the backend (For more instructions on how to run backend go to backend project)
 - yarn install
+- Create a .env file with the next variables
+  - VITE_API_URL
+    - This will be the backend's url
 - yarn run dev
 - Create an account
 - Login
