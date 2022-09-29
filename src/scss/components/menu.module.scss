@@ -1,0 +1,7 @@
+.menu {
+  :global(.ant-dropdown-menu) {
+    border-radius: 8px !important;
+    background-color: var(--layer) !important;
+    padding: 0.8em 0;
+  }
+}

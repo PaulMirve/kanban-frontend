@@ -1,0 +1,37 @@
+@use '@sass/base/typography' as *;
+
+.select {
+  width: 100%;
+  :global(.ant-select-selector) {
+    height: 4rem !important;
+    display: flex !important;
+    align-items: center;
+    border: 1px solid var(--border) !important;
+    box-shadow: none !important;
+    background-color: var(--layer) !important;
+  }
+
+  &:global(.ant-select-focused) {
+    :global {
+      .ant-select-selector {
+        border: 1px solid var(--primary) !important;
+      }
+    }
+  }
+}
+
+.dropdown {
+  &:global(.ant-select-dropdown) {
+    :global(.ant-select-item-option-content){     
+      color: var(--grey) !important;
+    }
+    :global(.ant-select-item-option-selected) {
+      background-color: rgba(168, 164, 255, 0.25) !important;
+    }
+  }
+}
+
+.label {
+  color: var(--grey);
+  margin-bottom: 0.8rem;
+}

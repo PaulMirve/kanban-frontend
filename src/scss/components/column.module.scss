@@ -1,0 +1,60 @@
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.dots{
+  display: flex;
+  gap: 1.2rem;
+}
+
+.dotsMenu{
+  :global(.ant-dropdown-menu){
+    padding: 1em !important;
+  }
+}
+
+.dot {
+  height: 1.5rem;
+  aspect-ratio: 1;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+.cards {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--layer);
+  padding: 2.3rem 1.6rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 6px rgba(#364e7e, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+
+  &:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(#364e7e, 0.2);
+    .title{
+      color: var(--primary);
+    }
+  }
+}
+
+.titleMenu{
+  height: 1.2rem;
+  aspect-ratio: 1;
+  margin-left: auto;
+  fill: var(--grey);
+  cursor: pointer;
+}

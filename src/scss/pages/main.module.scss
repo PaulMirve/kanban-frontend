@@ -1,0 +1,44 @@
+.main {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background-color: var(--background);
+
+  & span {
+    display: grid;
+    place-items: center;
+  }
+}
+
+.columns {
+  padding: 2.4rem;
+  height: 100%;
+  display: grid;
+  gap: 24px;
+  grid-template-rows: 1fr;
+  overflow: scroll;
+  background-color: var(--background);
+}
+
+.newColumn {
+  color: var(--grey);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  background-color: var(--layer-hover);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 3.9rem;
+
+  &:hover{
+    .newColumnText{
+      color: var(--primary);
+    }
+  }
+
+  & svg {
+    height: 2rem;
+    aspect-ratio: 1;
+  }
+}

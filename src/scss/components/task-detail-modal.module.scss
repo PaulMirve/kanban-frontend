@@ -1,0 +1,42 @@
+.grey {
+  color: var(--grey);
+}
+
+.subtasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.subtask {
+  background-color: var(--background);
+  padding: 1.2em;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.completed{
+  & p{
+    text-decoration: line-through;
+  }
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menuItem{
+  cursor: pointer;
+
+  &:first-child{
+    color: var(--grey);
+  }
+
+  &:last-child{
+    color: var(--danger);
+  }
+}

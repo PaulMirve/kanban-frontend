@@ -1,0 +1,72 @@
+@use '@sass/abstract/mixins' as *;
+
+.main {
+  background-color: var(--layer);
+  width: 100%;
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+  padding: 0 2.4rem;
+  border-bottom: 1px solid var(--lines);
+}
+
+.title {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.logo {
+  display: none;
+
+  @include respond(phone) {
+    display: block;
+  }
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+  @include respond(phone) {
+    gap: 1.6rem;
+  }
+
+  & svg {
+    height: 2rem;
+    aspect-ratio: 1;
+    fill: var(--grey);
+    cursor: pointer;
+  }
+}
+
+.delete {
+  color: var(--danger);
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.disabled {
+  color: var(--danger-hover);
+  cursor: default;
+}
+
+.button {
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.mobileButton {
+  display: none;
+  @include respond(phone) {
+    display: flex;
+  }
+}
+
+.openMenu {
+  height: 2rem;
+  aspect-ratio: 1;
+}

@@ -1,0 +1,75 @@
+@use '@sass/abstract/mixins' as *;
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(black, 0.5);
+  display: none;
+  place-items: center;
+}
+
+.visible {
+  display: grid;
+}
+
+.container {
+  background-color: var(--layer);
+  width: 48rem;
+  min-height: 23rem;
+  max-height: 80rem;
+  border-radius: 6px;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include respond(phone){
+    width: 90%;
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+
+  & span {
+    margin-left: auto;
+  }
+}
+
+.menuWrapper{
+  margin-left: auto;
+  height: 3rem;
+  width: 3rem;
+  display: grid;
+  align-items: center;
+  justify-content: end;
+}
+
+.menu {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  fill: var(--grey);
+}
+
+.content {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 2.4rem;
+
+  @include respond(phone){
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,22 @@
+.skeleton {
+  background-color: var(--grey);
+  opacity: 0.2;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.rounded {
+  border-radius: 50px;
+}
+
+.squared {
+  border-radius: 8px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 40%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 80%);
+  }
+}

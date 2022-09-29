@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.subtasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.subtaskBox{
+    display: flex;
+    align-items: center;
+
+    & svg{
+        height: 3.5rem;
+        margin-left: 1.6rem;
+        aspect-ratio: 1;
+        cursor: pointer;
+    }
+}

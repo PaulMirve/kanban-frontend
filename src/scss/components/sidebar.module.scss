@@ -1,0 +1,139 @@
+@use '@sass/abstract/mixins' as *;
+
+.sidebar {
+  height: 100%;
+  background-color: var(--layer);
+  width: 30rem;
+  border-right: 1px solid var(--lines);
+  padding: 0 2.3rem 3.2rem 0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, width 0.2s ease;
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.title {
+  height: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.item {
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+  padding: 1.5rem 3.2rem;
+  color: var(--grey);
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  cursor: pointer;
+
+  &:hover:not(.selected) {
+    background-color: rgba(168, 164, 255, 0.25);
+    color: var(--primary);
+
+    & svg {
+      fill: var(--primary);
+    }
+  }
+
+  & svg {
+    fill: var(--grey);
+    height: 1.6rem;
+    aspect-ratio: 1;
+  }
+}
+
+.selected {
+  background-color: var(--primary);
+  color: var(--text-contrast);
+
+  & svg {
+    fill: var(--text-contrast);
+    height: 1.6rem;
+    aspect-ratio: 1;
+  }
+}
+
+.theme {
+  background-color: var(--background);
+  align-self: flex-end;
+  border-radius: 1.2rem;
+  padding: 1.4rem 0;
+  margin-top: auto;
+  width: 25.1rem;
+  display: flex;
+  justify-content: center;
+
+  & svg {
+    height: 1.8rem;
+    aspect-ratio: 1;
+    fill: var(--grey);
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+  }
+}
+
+.hide {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--grey);
+  margin-left: 3.2rem;
+  margin-top: 2.2rem;
+  cursor: pointer;
+
+  & svg {
+    height: 1.6rem;
+    aspect-ratio: 1;
+    fill: var(--grey);
+  }
+}
+
+.hidden {
+  transform: translateX(-30rem);
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.show {
+  position: fixed;
+  background-color: var(--primary);
+  bottom: 32px;
+  left: 0;
+  border-bottom-right-radius: 500px;
+  border-top-right-radius: 500px;
+  padding: 1.8rem 2.8rem 1.8rem 1.8rem;
+
+  & svg {
+    fill: var(--text-contrast);
+    height: 1.6rem;
+    aspect-ratio: 1;
+  }
+}
+
+.createNewBoard {
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+  padding: 1.5rem 3.2rem;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  cursor: pointer;
+
+  & svg {
+    fill: var(--primary);
+    height: 1.6rem;
+    aspect-ratio: 1;
+  }
+
+  & span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

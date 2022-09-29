@@ -1,0 +1,17 @@
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+  padding: 0 0.8em;
+  transition: transform 0.2s ease;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.icon {
+  height: 1.5rem;
+  aspect-ratio: 1;
+}

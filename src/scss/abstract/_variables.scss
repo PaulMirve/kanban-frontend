@@ -1,0 +1,54 @@
+$themes: (
+  background: (
+    light: #f4f7fd,
+    dark: #20212c,
+  ),
+  layer: (
+    light: #ffffff,
+    dark: #2b2c37,
+  ),
+  text: (
+    light: #000112,
+    dark: #ffffff,
+  ),
+  dark-grey: (
+    light: #3e3f4e,
+    dark: #3e3f4e,
+  ),
+  grey: (
+    light: #828fa3,
+    dark: #828fa3,
+  ),
+  lines: (
+    light: #e4ebfa,
+    dark: #3e3f4e,
+  ),
+  primary: (
+    light: #635fc7,
+    dark: #635fc7,
+  ),
+  text-contrast: (
+    light: #ffffff,
+    dark: #ffffff,
+  ),
+  primary-hover: (
+    light: #a8a4ff,
+    dark: #a8a4ff,
+  ),
+  danger: (
+    light: #ea5555,
+    dark: #ea5555,
+  ),
+  danger-hover: (
+    light: #ff9898,
+    dark: #ff9898,
+  ),
+  layer-hover: (
+    light: #e9effa,
+    dark: #2b2c37,
+  ),
+  border: (
+    light: rgba(#828fa3, 0.25),
+    dark:  rgba(#828fa3, 0.25),
+  ),
+);

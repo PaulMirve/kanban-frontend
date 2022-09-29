@@ -1,0 +1,86 @@
+@use '@sass/abstract/mixins' as *;
+
+.mobileMenu {
+  display: none;
+
+  @include respond(phone) {
+    display: block;
+  }
+}
+
+.dropdown {
+  :global(.ant-dropdown-menu) {
+    width: 264px;
+    background-color: var(--layer) !important;
+    padding-right: 2.4rem;
+    padding-bottom: 1.6rem;
+    border-radius: 8px;
+  }
+}
+
+.title {
+  color: var(--grey);
+  margin-top: 1.6rem;
+  margin-left: 2.4rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.boards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.9rem;
+}
+
+.menuItem {
+  background-color: var(--layer) !important;
+  color: var(--grey) !important;
+  padding: 1.4em 2.4em;
+
+  :global(.ant-dropdown-menu-title-content) {
+    display: flex !important;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}
+
+.icon {
+  height: 1.6rem;
+  aspect-ratio: 1;
+  color: var(--grey);
+  fill: var(--grey);
+}
+
+.active {
+  background-color: var(--primary) !important;
+  color: var(--text-contrast) !important;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  & svg {
+    color: var(--text-contrast);
+    fill: var(--text-contrast);
+  }
+}
+
+.theme {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-self: center;
+  background-color: var(--background);
+  padding: 1.4rem;
+  width: 100%;
+  margin-left: 2.4rem;
+  border-radius: 6px;
+
+  & svg {
+    height: 2rem;
+    aspect-ratio: 1;
+    fill: var(--grey);
+  }
+}

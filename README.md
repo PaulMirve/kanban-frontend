@@ -1,0 +1,2 @@
+# Kanban project
+Backend and Frontend for kanban project from [Frontendmentor](https://www.frontendmentor.io). The challenge can be found [here](https://www.frontendmentor.io/challenges/kanban-task-management-web-app-wgQLt-HlbB) 

@@ -1,0 +1,21 @@
+.checkbox {
+  height: 1.6rem;
+  aspect-ratio: 1;
+  border-radius: 2px;
+  background-color: var(--layer);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.check {
+  height: 1.2rem;
+  aspect-ratio: 1;
+  color: var(--layer);
+}
+
+.selected {
+  background-color: var(--primary);
+  border: none;
+}

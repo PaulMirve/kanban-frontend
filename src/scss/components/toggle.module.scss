@@ -1,0 +1,32 @@
+.main {
+  height: 2rem;
+  width: 4rem;
+  background-color: var(--primary);
+  border-radius: 500px;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    height: 1.4rem;
+    aspect-ratio: 1;
+    background-color: white;
+    position: absolute;
+    border-radius: 500px;
+    top: 0.3rem;
+    left: 0.3rem;
+    transition: left 0.2s ease;
+  }
+}
+
+.active {
+  &::after {
+    content: '';
+    height: 1.4rem;
+    aspect-ratio: 1;
+    background-color: white;
+    position: absolute;
+    border-radius: 500px;
+    left: 2.3rem;
+  }
+}

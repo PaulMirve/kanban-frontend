@@ -1,0 +1,18 @@
+.signIn{
+    background-color: var(--background);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.form{
+    width: 40rem;
+    background-color: var(--layer);
+    padding: 3em 2em;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
